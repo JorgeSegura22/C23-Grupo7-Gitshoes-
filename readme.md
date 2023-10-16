@@ -25,11 +25,11 @@
 
    -FORMULARIO DE REGISTRO
        -wireframe formulario de registro Desk
-            ???
+            https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
        -wireframe formulario de registro Mob
-            ???
+           https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
        -wireframe formulario de registro tablet
-
+           https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
 -PÁGINAS INSPIRADORAS
          https://grimoldi.com/
          https://opensports.com/
