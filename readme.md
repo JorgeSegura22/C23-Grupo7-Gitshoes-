@@ -11,10 +11,11 @@
             
    -DETALLE DE PRODUCTO
         .wireframe detalle de producto Desk
-            ???
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
         .wireframe detalle de producto Mob
-            ????
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
        -wireframe detalle de producto tablet
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
 
    -FORMULARIO DE LOGIN
        -wireframe formulario de login Desk
