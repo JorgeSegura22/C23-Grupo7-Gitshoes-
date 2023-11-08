@@ -1,0 +1,15 @@
+header{
+border: 2px soli;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagen-logo img{
+
+    width: 50%;
+    height: 80%;
+}
+
+.nav-header{
+display: flex;
+}
