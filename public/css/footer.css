@@ -1,0 +1,43 @@
+footer{
+    display: flex; /* Elementos mostrados con flexbox */
+    margin:  25%; /* Margen */
+    justify-content: center;
+    margin-top: 10px; /* Margen superior de 10px */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    text-align: center; /* Contenido centrado horizontalmente */
+    
+}
+
+.fot{
+    display: block; /* Elementos mostrados como bloques */
+    padding: 5px; /* Relleno interno*/
+    margin: 7px; /* Margen externo*/
+    background-color: #000000; /* Fondo color*/
+    color: white; /* Texto en color*/
+  border-radius: 20px; /* Ajusta este valor para cambiar la curvatura */
+}
+
+.fot1 {
+    display: inline-block;
+    margin: 0 2px; /* Espacio entre elementos */
+}
+
+.linea-divisoria {
+    border: 0;
+    height: 1px; /* Grosor de la línea */
+    background: #090909; /* Color de la línea */
+    margin: 20px 0; /* Espacio entre la línea y los elementos circundantes */
+}
+
+
+/* Estilos predeterminados */
+.infoGeneral {
+    display: block; /* Asegura que esté visible por defecto */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .infoGeneral {
+        display: none; /* Oculta en dispositivos con ancho de pantalla menor a 768px */
+    }
+}
