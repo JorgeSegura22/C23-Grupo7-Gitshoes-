@@ -1,15 +1,55 @@
 header{
-border: 2px soli;
-  display: flex;
-  flex-direction: row;
+    background-color: #FAF9F3;
+  
+    display: flex;
+   padding: 0;
+    flex-wrap: wrap;
+    height: 20vh;
+    align-items:end;
+justify-content:space-between;
+
 }
 
-.imagen-logo img{
+.icom-hamburguesa i{
+padding:10px
+}
 
-    width: 50%;
-    height: 80%;
+header img{  
+width: 100px;
+height: 100px;
+align-self: auto;
+margin-bottom: 10px;
+margin-left: 70px;
+margin-right: 15px;
 }
 
 .nav-header{
-display: flex;
+    display: NONE;
+}
+
+
+.Icom-header i{
+ 
+   margin-left: 5px;
+padding: 0px 2px 2px 2px;
+}
+
+
+
+.envio-gratis-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: parpadeo 1s infinite alternate;
+}
+
+
+@keyframes parpadeo {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
 }
