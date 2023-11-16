@@ -1,7 +1,7 @@
 header{
     
  
-    background-image: "/img/9085772.jpg" ;
+   background-color:#FF7228;
  
   width: 100%;
     display: flex;
@@ -53,7 +53,7 @@ padding: 0 2px 2px 2px;
    
 }
 .trancision-nav-header{
-background-color: white;
+background-color:#FF7228;
 color: black;
 font-size: 16px;
 transition: background-color, color 0.4s, top 0.5s ,border-radius 0.4s,font-size 0.4s;
@@ -63,8 +63,8 @@ border-radius:0 ;
 }
 .trancision-nav-header:hover{
 
-    background-color: #FF7228;
-    color: white;
+    background-color:  white;;
+    color: black;
   border-radius: 25px;
   font-size: 17px;
 }
