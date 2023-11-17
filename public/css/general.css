@@ -1,144 +1,15 @@
 
-body{
-    width: 100vw;
-    height: 10vh;
-    background-color:#FAF9F3;
-   
-}
-
-
 *{
-    padding: 0;
-    font-weight: bold;
+
+    font-family: "robot";
+}
+ 
+ a{
+
+    text-decoration: none;
+    
 }
 
-ul {
-
+li{
     list-style: none;
-}
-
-
-
-@media (min-width: 768px) and (max-width: 1023px){
-    
-    header img{
-       
-        animation: logo 0.5s  alternate;
-    }
-    
-    .icom-hamburguesa i{
-        display: none;
-    }
-    
-    .nav-header {
-        display: flex;
-     padding-bottom: 40px;
-    }
-
-    .nav-header ul{
-        display: flex;
-    }
-
-    .nav-header ul li{
-        margin-left: 5px;
-    }
-
-    .nav-header a{
-        text-decoration: none;
-    }
-
-    .marca-menu {
-        color: #FF7228;
-        transition: color 56ms;
-        
-    }
-    
-    .marca-menu:hover {
-        color: blue;
-    }
-    header img{
-        width: 150px;
-height: 150px;
-    }
-
-    .Icom-header i{
-        padding-bottom: 60px;
-        margin-right: 10px;
-    }
-    
-    .envio-gratis-bar {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 5%;
-        animation: parpadeo 1s infinite alternate;
-    }
-
-   
-    @keyframes parpadeo {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0.5;
-        }
-    }
-
-    .linea-negra {
-        border: 1px solid black; 
-        margin: 20px 0; 
-    }
-
-  
-}
-
-
-@media (min-width: 1024px) and (max-width: 1919px) {
-    
-    header img{
-        margin-left: 10px; 
-    }
-    
-    .icom-hamburguesa i{
-        display: none;
-    }
-    .nav-header {
-        display: flex;
-     padding-bottom: 40px;
-     margin-left: 110px;
-    }
-
-    .nav-header ul{
-        display: flex;
-    }
-
-    .nav-header ul li{
-        margin-left: 20px;
-    }
-
-    .nav-header a{
-        text-decoration: none;
-    }
-
-    .marca-menu{
-        color:blacknpx;
-    }
-
-    header img{
-        width: 150px;
-height: 150px;
-    }
-
-    .Icom-header i{
-        padding-bottom: 55px;
-    }
-
-    .Icom-header {
-        margin-left: 100px;
-    }
-    
-    .envio-gratis-bar{
-        margin-top: 1%;
-    }
 }
