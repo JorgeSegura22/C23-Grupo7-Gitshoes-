@@ -1,0 +1,62 @@
+/* Estilos específicos para #footer1 */
+#footer1{
+    background-color: beige;
+    text-align: center;
+}
+
+/* Estilos específicos para #footer2 */
+
+#footer2{
+    text-align: center;
+    margin: auto;
+}
+
+#footer2 nav ul li {
+    display: block; /* Elementos mostrados como bloques */
+    padding: 5px; /* Relleno interno*/
+    margin: 7px; /* Margen externo*/
+    background-color: #000000; /* Fondo color*/
+    color: white; /* Texto en color*/
+  border-radius: 20px; /* Ajusta este valor para cambiar la curvatura */
+}
+
+/* Estilos para #footer3 */
+#footer3 {
+    background-color: azure;
+    opacity: 0.9;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+}
+
+#footer3 nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer3 nav ul li {
+    margin: 0 5px; /* Espacio entre los elementos de la lista */
+    position: relative;
+}
+
+#footer3 nav ul li:not(:last-child)::after {
+    content: "|"; /* Agrega el separador visual entre los elementos */
+    margin-left: 5px; /* Espacio entre el separador y el elemento */
+    color: black; /* Cambia el color del separador si es necesario */
+}
+
+/* Elimina el separador después del último elemento */
+#footer3 nav ul li:last-child::after {
+    content: "";
+}
+
+
+/* Para dispositivos móviles con ancho máximo de 767px */
+@media only screen and (max-width: 767px) {
+    #footer1{
+        display: none; /* Oculta el elemento con ID "footer1" en vista móvil */
+    }
+}
