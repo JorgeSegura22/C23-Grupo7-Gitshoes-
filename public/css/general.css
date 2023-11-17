@@ -2,9 +2,14 @@
 *{
 
     font-family: "robot";
+    box-sizing: border-box;
 }
- 
- a{
+
+body{
+    margin: 0;
+}
+
+a{
 
     text-decoration: none;
     
