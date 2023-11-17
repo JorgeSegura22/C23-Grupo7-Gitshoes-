@@ -2,61 +2,85 @@
 #footer1{
     background-color: beige;
     text-align: center;
+    margin: auto;
 }
 
 /* Estilos específicos para #footer2 */
 
 #footer2{
     text-align: center;
-    margin: auto;
+    width: auto;
 }
+
 
 #footer2 nav ul li {
     display: block; /* Elementos mostrados como bloques */
-    padding: 5px; /* Relleno interno*/
-    margin: 7px; /* Margen externo*/
+    padding: 15px; /* Relleno interno*/
+    margin: 27px; /* Margen externo*/
     background-color: #000000; /* Fondo color*/
     color: white; /* Texto en color*/
   border-radius: 20px; /* Ajusta este valor para cambiar la curvatura */
+
 }
 
 /* Estilos para #footer3 */
 #footer3 {
     background-color: azure;
     opacity: 0.9;
-    margin-top: 20px;
+    margin-top:17%;
     display: flex;
-    justify-content: center; /* Centra los elementos */
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+
 #footer3 nav ul {
-    list-style: none;
     padding: 0;
-    margin: 0;
+    list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
+
 
 #footer3 nav ul li {
     margin: 0 5px; /* Espacio entre los elementos de la lista */
     position: relative;
+    width: auto;
+    text-align: center;
+
 }
 
 #footer3 nav ul li:not(:last-child)::after {
     content: "|"; /* Agrega el separador visual entre los elementos */
+    text-align: center;
     margin-left: 5px; /* Espacio entre el separador y el elemento */
     color: black; /* Cambia el color del separador si es necesario */
+    width: 100%;
 }
 
 /* Elimina el separador después del último elemento */
 #footer3 nav ul li:last-child::after {
     content: "";
+    width: auto;
 }
 
+#footer3 nav li{
+    margin: 0 10px;
+}
 
 /* Para dispositivos móviles con ancho máximo de 767px */
-@media only screen and (max-width: 767px) {
+@media (min-width: 767px) {
     #footer1{
         display: none; /* Oculta el elemento con ID "footer1" en vista móvil */
     }
+    #footer3 nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        border: 2px solid red;
+    }
 }
+
