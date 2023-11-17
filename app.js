@@ -12,7 +12,11 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/about",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/viwes/about.html"))
+    res.sendFile(path.join(__dirname+"/views/about.html"))
+})
+
+app.get("/detalleDelProducto",(req,res)=>{
+    res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
 })
 
 app.listen(port, console.log(`el servido esta activo en htt://localhost:${port}`));
