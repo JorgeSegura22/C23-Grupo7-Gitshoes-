@@ -1,10 +1,10 @@
+
+
 /* Estilos específicos para #footer1 */
 #footer1{
     background-color: beige;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    width: 250vh
 }
 
 /* Estilos específicos para #footer2 */
