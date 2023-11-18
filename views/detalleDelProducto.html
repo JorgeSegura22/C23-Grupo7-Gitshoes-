@@ -17,11 +17,11 @@
 
     <main class="body_detalleDelProducto">
 
-        <!-- <aside class="imagen_producto_detail">
+        <section class="imagen_producto_detalle">
             <img src="/img/detalleDelProducto/8175143.jpg" alt="imagen de zapatillas">
             <img src="/img/detalleDelProducto/vans.jpg" alt="imagen de zapatillas">
             <img src="/img/detalleDelProducto/8175138.jpg" alt="imagen de zapatillas">
-        </aside> -->
+        </section>
         <section class="carousel_detalle_del_producto">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
@@ -47,15 +47,18 @@
         </section>
             
         <section class="seleccion_talle_color_detail">
-            <article>
-                <h3>Vans</h3>
-                <p>Zapatillas Vans W Ward</p>
-                <p>Precio: $53000</p>
-                <p>Colores</p>
-                <p>Negro</p>
+            <article class="titulo_precio_color">
+                <h3 class="marca_producto">Vans</h3>
+              <div class="modelo_precio"> 
+                <p class="modelo_prodcuto">Zapatillas Vans W Ward</p>
+                <p class="precio_producto">$53000</p>
+              </div>
+                <p class="titulo_color">Colores:</p>
+                <p class="color_producto">Negro</p>
             </article>
-            <article>
-                <h3>Talles:</h3>
+            <article class="seleccion_talles">
+              <h3 class="titulo_talles">Talles:</h3>
+              <div class="talles_disponibles">
                 <div>37</div>
                 <div>38</div>
                 <div>39</div>
@@ -65,17 +68,27 @@
                 <div>43</div>
                 <div>44</div>
                 <div>45</div>
+              </div>
             </article>
-            <article>
-                <p>COMPRAR</p>
-                <p>Cantidad</p>
+            <div class="boton_comprar"><button type="submit" value="comprar"><a href="">comprar</a></button></div>
+            <article class="cantidad_producto">
+              <p>cantidad:</p>
+              <input type="number" placeholder="1" value="1" min="1" class="input_contador"/>
             </article>
-            <article>
+            <article class="descripcion_producto">
                 <h3>Descripción</h3>
                 <p>Las nuevas Vans Ward combinan el estilo de la clásica zapatilla de skate con las rayas laterales,
                     con una puntera reforzada y materiales resistentes. Diseñados para tus paseos por la ciudad.
                 </p>
             </article>
+            <section class="accesos_relacionados">
+              <h3>Envíos</h3>
+              <p>Costos y tiempo de entrega</p>
+              <h3>Cambios</h3>
+              <p>Cambios y tiempos de entrega</p>
+              <h3>Pagos</h3>
+              <p>Consultar medios de pago aceptados</p>
+            </section>
         </section>
     </main>
 
