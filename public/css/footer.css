@@ -2,17 +2,23 @@
 #footer1{
     background-color: beige;
     text-align: center;
-    margin: auto;
-    border: 2px solid blue;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 /* Estilos específicos para #footer2 */
 
-#footer2{
+#footer2 {
     text-align: center;
-    width: auto;
-    border: 2px solid green;
+    width: 43vh;
+    
+    /* Estilos para centrar */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 
 #footer2 nav ul li {
@@ -29,13 +35,11 @@
 #footer3 {
     background-color: azure;
     opacity: 0.9;
-    margin-top:17%;
     display: flex;
     width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 2px solid yellow;
 }
 
 

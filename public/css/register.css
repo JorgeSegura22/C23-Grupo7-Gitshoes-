@@ -32,7 +32,7 @@ form {
 .bregistro{
     color: #fff5f5;
     background-color: rgb(0, 38, 255);
-    width: 50%; /* Puedes ajustar el ancho del botón si es necesario */
+    width: 13vh; /* Puedes ajustar el ancho del botón si es necesario */
     margin-top: 10px; /* Espacio arriba del botón */
 }
 
