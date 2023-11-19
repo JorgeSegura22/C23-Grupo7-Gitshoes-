@@ -1,4 +1,4 @@
-body{
+.body-register{
     
     background-image: url(https://media.gq.com.mx/photos/5f68ebd8abe3a852d28d5d73/16:9/w_2560%2Cc_limit/TENIS.jpg);
     background-size: cover;
@@ -6,7 +6,7 @@ body{
 }
 main{
     background-color: #ccc;
-    opacity: 0.6;
+    opacity: 1;
 }
 .registro{
     text-align: center;
