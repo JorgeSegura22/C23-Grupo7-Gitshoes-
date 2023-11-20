@@ -9,10 +9,13 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/home.html"))
 })
 
-
 app.get("/register",(req,res)=>{
     res.sendFile(path.join(__dirname+"/viwes/register.html"))
 })
 app.listen(port, () => {
   console.log(`Servidor arrancado en http://localhost:${port}/`);
 });
+
+app.get("/detalleDelProducto",(req,res)=>{
+    res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
+})
