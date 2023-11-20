@@ -4,16 +4,11 @@
 
 
 *{
-
     font-family: "robot";
 }
- 
- li a{
-   
 a{
-   text-decoration: none;
+    text-decoration: none;
 }
-
 li{
     list-style: none;
 }

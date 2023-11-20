@@ -5,9 +5,16 @@ main{
     flex-wrap: wrap;
 
 }
+.carousel{
+    margin: auto;
+}
 
 .imagen_banner{
     width: 100%;
+}
+
+.contenedor_banner_home{
+    margin: auto;
 }
 
 .subtitulo_acceso_body{
@@ -42,7 +49,7 @@ main{
 }
 
 
-main section a{
+.boton_ver{
     background-color:black;
     padding: 10px;
     border-radius: 10px;
