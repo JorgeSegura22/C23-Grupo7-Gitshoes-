@@ -9,7 +9,9 @@
 }
  
  li a{
-   
+   list-style: none;
+
+   }
 a{
    text-decoration: none;
 }

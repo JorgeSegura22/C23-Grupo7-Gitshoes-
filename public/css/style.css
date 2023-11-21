@@ -3,7 +3,10 @@
 @import url("/css/general.css");
 @import url("/css/home.css");
 @import url("/css/detalleDelProducto.css");
+
+@import url("/css/login.css");
 @import url("footer.css");
 @import url("register.css");
+
 #derecho{ color:blue;
 }
