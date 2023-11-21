@@ -16,6 +16,9 @@ app.get("/register",(req,res)=>{
 app.get("/detalleDelProducto",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
 })
+.get("/login", (req, res) =>
+  res.sendFile(path.join(__dirname+"/views/login.html"))
+);
 
 app.listen(port, () => {
     console.log(`Servidor arrancado en http://localhost:${port}/`);
