@@ -10,16 +10,17 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/register",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/viwes/register.html"))
+    res.sendFile(path.join(__dirname+"/views/register.html"))
 })
 
 app.get("/login",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/login.html"))
 })
-app.listen(port, () => {
-  console.log(`Servidor arrancado en http://localhost:${port}/`);
-});
 
 app.get("/detalleDelProducto",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
 })
+
+app.listen(port, () => {
+    console.log(`Servidor arrancado en http://localhost:${port}/`);
+  });
