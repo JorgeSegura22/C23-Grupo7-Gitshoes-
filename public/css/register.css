@@ -1,33 +1,25 @@
 .body_register{
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    /* background-image: url(https://media.gq.com.mx/photos/5f68ebd8abe3a852d28d5d73/16:9/w_2560%2Cc_limit/TENIS.jpg); */
-    /*height: 100vh; Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+    /* font-family: 'Arial', sans-serif; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     opacity: 1.5;
 }
-.container{
+.container_registro{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color:rgba(155, 155, 155, 0.5);
-    width: 60%;
+    align-items: left;
+    /* background-color:rgba(155, 155, 155, 0.5); */
+    width: 90%;
     margin: auto;
     margin-bottom: 5%;
 }
 
 .main_register {
 
-    opacity: 0.6;
-    /* width: 54vh; */
+    /* opacity: 0.6; */
     width: 100%;
-    /* padding: 2vh;
-    padding-right: 2vh;
-    padding-left: 6vh; */
-    /*margin-top: 10vh; Espaciado superior desde la parte superior de la ventana */
- /* Espaciado inferior desde la parte inferior de la ventana */
     background-color: #fbf9f2;
 }
 
@@ -38,7 +30,7 @@
 .form_register {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .input-group {
@@ -56,6 +48,14 @@
 }
 
 #tengo {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
 }
+
+@media (min-width: 768px) {
+    .container_registro {
+        /* align-items: center; */
+    }
+    
+}
+
