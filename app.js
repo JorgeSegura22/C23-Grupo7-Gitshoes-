@@ -5,21 +5,30 @@ const path = require("path");
 
 app.use(express.static("public"))
 
+app.get("/header",(req,res)=>{
+    res.sendFile(path.join(__dirname+"/views/header.html"))
+})
+
+app.get("/footer",(req,res)=>{
+    res.sendFile(path.join(__dirname+"/views/footer.html"))
+})
+
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/home.html"))
 })
 
 app.get("/register",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/viwes/register.html"))
+    res.sendFile(path.join(__dirname+"/views/register.html"))
 })
 
 app.get("/login",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/login.html"))
 })
-app.listen(port, () => {
-  console.log(`Servidor arrancado en http://localhost:${port}/`);
-});
 
 app.get("/detalleDelProducto",(req,res)=>{
     res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
 })
+
+app.listen(port, () => {
+    console.log(`Servidor arrancado en http://localhost:${port}/`);
+  });

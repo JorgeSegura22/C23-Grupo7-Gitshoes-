@@ -1,42 +1,61 @@
-.body-register{
-    
-    background-image: url(https://media.gq.com.mx/photos/5f68ebd8abe3a852d28d5d73/16:9/w_2560%2Cc_limit/TENIS.jpg);
-    background-size: cover;
+.body_register{
+    margin: 0;
+    /* font-family: 'Arial', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     opacity: 1.5;
 }
-main{
-    background-color: #ccc;
-    opacity: 1;
+.container_registro{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* background-color:rgba(155, 155, 155, 0.5); */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
 }
-.registro{
+
+.main_register {
+
+    /* opacity: 0.6; */
+    width: 100%;
+    background-color: #fbf9f2;
+}
+
+.registro {
     text-align: center;
 }
 
-.input-group{
-    text-align: center;
-    justify-content: center;
-    width: 100%; 
+.form_register {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.input-group {
+    width: 100%;
     padding: 8px;
     margin-top: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos en el eje horizontal */
-}
-
-
-.bregistro{
+.bregistro {
     color: #fff5f5;
     background-color: rgb(0, 38, 255);
-    width: 50%; /* Puedes ajustar el ancho del botón si es necesario */
-    margin-top: 10px; /* Espacio arriba del botón */
+    margin-top: 10px;
 }
 
-#tengo{
-    text-align: center;
-    justify-content: center;
+#tengo {
+    /* text-align: center; */
+    margin-top: 20px;
 }
+
+@media (min-width: 768px) {
+    .container_registro {
+        /* align-items: center; */
+    }
+    
+}
+

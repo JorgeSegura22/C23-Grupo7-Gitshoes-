@@ -9,7 +9,7 @@ footer{
     text-align: center;
     width: 100%;
     font-weight: bold;
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 1.2em;
 }
 
@@ -38,7 +38,7 @@ footer{
     background-color: #000000; /* Fondo color*/
     color: white; /* Texto en color*/
     border-radius: 20px; /* Ajusta este valor para cambiar la curvatura */
-    width: 30%;
+    width: 60%;
 }
 
 /* Estilos para #footer3 */
@@ -92,5 +92,9 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: row;
+        }
+        #footer2 nav ul li{
+        width: 30%;
+        margin: 10px;
         }
 }
