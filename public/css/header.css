@@ -1,7 +1,7 @@
 header{
     
  
-   background-color:#FF7228;
+   background-color:#FAF9F3;
  
   width: 100%;
     display: flex;
@@ -10,14 +10,19 @@ header{
     height: 20%;
     align-items:end;
 justify-content:space-between;
-border:2px solid green
 
 }
 
-
+.marca-menu{
+    color:orange;
+}
 
 .icom-hamburguesa i{
-padding:10px
+padding:10px;
+
+}
+.Icom-header{
+    margin-right: 5px;
 }
 
 .header-nav{
@@ -26,15 +31,15 @@ display: none;
 }
 
 header img{  
-width: 100px;
-height: 95px;
+width: 20%;
+height: 20%;
 align-self: auto;
 
 margin-left: 38px;
 margin-top: 17px;
 margin-right: 15px;
 animation: logo 1s  alternate;
-border: 2px solid black;
+
 }
 
 .nav-header{
@@ -47,7 +52,7 @@ border: 2px solid black;
    margin-left: 5px;
 margin-top: 0 2px 40px 2px;
 color:black;
-background-color: #FF7228;
+background-color: #FAF9F3;
 
 
 }
@@ -57,7 +62,7 @@ background-color: #FF7228;
     background-color: black;
     color: white;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0;
     text-align: center;
     animation: parpadeo 1s infinite alternate;
@@ -65,7 +70,7 @@ background-color: #FF7228;
    
 }
 .trancision-nav-header{
-background-color:#FF7228;
+background-color:#FAF9F3;
 color: black;
 font-size: 16px;
 transition: background-color, color 0.4s, top 0.5s ,border-radius 0.4s;
@@ -75,8 +80,8 @@ border-radius:0 ;
 }
 .trancision-nav-header:hover{
 
-    background-color:  white;;
-    color: black;
+    background-color:  black;;
+    color: white;
   border-radius: 16px;
   
 }
@@ -111,15 +116,34 @@ border-radius:0 ;
 
 @media (min-width:768px) and (max-width:1023px){
    
+header ul{
+    padding: 0;
+    margin: 0;
+   
+}
+    
 .icom-hamburguesa{
     display: none;
 }
 .header-nav{
    
-    display: flex; width:65% ;  
+    display: flex; 
+    width:35% ;  
 justify-content: center;
+margin-left:1px;
+margin-bottom: 50px;
 padding: 0;
+
 }
+
+.header-nav a{
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+
+
  .header-nav ul{
     display: flex;
  justify-content: center;
@@ -132,25 +156,37 @@ padding: 0;
 
 .Icom-header{
 
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 50px;
 }
 
 }
 @media (min-width:1024px) {
-   
-   
+  
+    .header-nav a{
+        font-size: 24px;
+        font-weight: bold;;
+    }
+    header img{
+height: 5%;
+width: 20%;
+
+    }
     .icom-hamburguesa{
         display: none;
     }
-    .header-nav{
+    .header-nav {
         display: flex;
-        width:65% ; 
-        
+        width:35% ; 
+        margin-bottom: 20px;
+        margin-right: 80px;
     justify-content: center;
     padding: 0;
+    
     }
      .header-nav ul{
         display: flex;
+        
      justify-content: center;
         width: 90%;
         gap:10px;
@@ -160,7 +196,8 @@ padding: 0;
     
     .Icom-header{
     
-        margin-right: 10px;
+        margin-right: 40px;
+        margin-bottom: 39px;
     }
     
 }
