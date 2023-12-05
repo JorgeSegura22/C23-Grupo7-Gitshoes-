@@ -13,10 +13,6 @@ header{
     color:orange;
 }
 
-.marca-menu{
-    color:orange;
-}
-
 .icom-hamburguesa i{
     padding:10px
 }
@@ -66,16 +62,17 @@ background-color: #FAF9F3;
     border: 2px solid blue;
 }
 .trancision-nav-header{
-background-color: #fbf9f2;
+background-color: #fbf5f2;
 color: black;
 font-size: 16px;
 transition: background-color, color 0.4s, top 0.5s ,border-radius 0.4s;
 border-radius:0 ;
 }
 .trancision-nav-header:hover{
-    background-color:  white;;
+    background-color:  rgb(222, 108, 2);
     color: black;
     border-radius: 16px;
+    padding: 5px;
 }
 .linea-negra{
     width: 100%;
@@ -160,8 +157,8 @@ padding: 0;
         font-weight: bold;;
     }
     header img{
-height: 5%;
-width: 10%;
+    height: 5%;
+    width: 10%;
 
     }
     .icom-hamburguesa{
