@@ -3,20 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Gitshoes</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/icom/favicon-16x16.png"/>
+    <script src="https://kit.fontawesome.com/5db5054929.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-
-        <section>
-            <article>
-                
-            </article>
-            <article>
-                
-            </article>
+    <main class="main_carrito">
+        <section class="seccion_1_carrito">
+            <div>
+                <img src="/img/detalleDelProducto/8175143.jpg" alt="imagen dde zapatillas" class="imagen_carrito">
+            </div>
+            <div class="carrito_datos">
+                <p>Producto:</p>
+                <p>Vans - W ward</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Talle:</p>
+                <p>39</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Color:</p>
+                <img src="/img/detalleDelProducto/8175143.jpg" alt="imagen de zapatilla" class="imagen_color">
+            </div>
+            <div class="carrito_datos">
+                <p>Precio:</p>
+                <p>45000</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Cantidad:</p>
+                <p>1</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Precio subtotal:</p>
+                <p>45000</p>
+            </div>
         </section>
+        <section class="seccion_2_carrito">
+            <div class="seccion_cupon">
+                <p class="cupon_consulta">¿Tenés un cupón de descuento?</p>
+                <div class="input_cupon_boton">
+                    <input type="text" name="cupon" id="cupon">
+                    <div class="aplicar_cupon"><button type="submit" value="enviar datos">Aplicar cupon</button></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Total de artículos:</p>
+                    <p>1</p>
+                </div>
+                <div>
+                    <p>Total:</p>
+                    <p>45000</p>
+                </div>
+            </div>
+            <div>
+                <p>Costo de envio:</p>
+                <input type="text" name="envio" id="envio" placeholder="Indique su código postal">
+                <div class="boton_buscar_envio"><button type="submit" value="enviar datos">Buscar</button></div>
+            </div>
+            <div class="finalizar_compra"><button type="submit" value="enviar datos">Finalizar Compra</button></div>
 
+            <div class="continuar_comprando"><button type="submit" value="enviar datos">Continuar comprando</button></div>
+
+            <div class="vaciar_carrito"><button type="submit" value="enviar datos">Vaciar carrito </button></div>
+        </section>
     </main>
 </body>
 </html>
