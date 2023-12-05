@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #fbf9f2;
 } 
 .seccion_1_carrito{
     width: 90%;
@@ -19,6 +20,7 @@
 }
 .imagen_carrito{
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .imagen_color{
@@ -37,6 +39,8 @@
 .seccion_cupon{
     width: 90%;
     margin:10px auto;
+    background-color: rgb(237, 236, 236);
+    padding-bottom: 15px;
 }
 .cupon_consulta{
     text-align: center;
@@ -46,8 +50,108 @@
     flex-direction: column;
     align-items: center;
 }
-.aplicar_cupon{
+.aplicar_descuento{
     margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.total_articulos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    text-align: left;
+    margin: 0 0 0 auto;
+}
+
+.total_precio{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    text-align: left;
+    margin: 0 0 0 auto;
+}
+
+.envios_cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton_buscar_envio{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+.finalizar_compra{
+    width: 60%;
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.continuar_comprando{
+    margin-top: 10px;
+    background-color: rgb(237, 236, 236);
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+.vaciar_carrito{
+    width: 55%;
+    margin-top: 10px;
+    background-color: rgb(237, 236, 236);
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+@media (min-width: 768px){
+    .imagen_carrito{
+        display: none;
+    }
+    .seccion_1_carrito{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+    .carrito_datos{
+        flex-direction: column;
+        width: 13%;
+        align-items: initial;
+        border-top: none;
+    }
+    .resumen_carrito{
+        width: 60%;
+    }
+    .continuar_comprando{
+        width: 55%;
+    }
+}
+@media (min-width: 1024px){
+    .main_carrito{
+        flex-direction: row;
+    }
+    .seccion_1_carrito{
+        width: 65%;
+        margin-top: 0;
+    }
+    .seccion_2_carrito{
+        width: 30%;
+    }
 }
 
 
