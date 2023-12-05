@@ -73,8 +73,8 @@ transition: background-color, color 0.4s, top 0.5s ,border-radius 0.4s;
 border-radius:0 ;
 }
 .trancision-nav-header:hover{
-    background-color:  white;;
-    color: black;
+    background-color: orange;;
+    color: white;
     border-radius: 16px;
 }
 .linea-negra{
