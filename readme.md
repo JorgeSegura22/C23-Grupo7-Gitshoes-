@@ -11,10 +11,11 @@
             
    -DETALLE DE PRODUCTO
         .wireframe detalle de producto Desk
-            ???
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
         .wireframe detalle de producto Mob
-            ????
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
        -wireframe detalle de producto tablet
+            https://www.figma.com/file/2UNHKT8hNFqQmC0L5tnRT1/c23-grupo07-gitshoes-detalle?type=design&node-id=0-1&mode=design&t=mq1TzqUwSSoAT0Dh-0
 
    -FORMULARIO DE LOGIN
        -wireframe formulario de login Desk
@@ -28,9 +29,9 @@
 
    -FORMULARIO DE REGISTRO
        -wireframe formulario de registro Desk
-            ???
+            https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
        -wireframe formulario de registro Mob
-            ???
+           https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
        -wireframe formulario de registro tablet
 
    -CARRITO DE COMPRAS
@@ -44,6 +45,7 @@
             https://www.figma.com/file/T6BvzpvNM5DnevTalp6qIp/c23-grupo07-gitshoes-carrito?type=design&node-id=0-1&mode=design&t=9EQCL5Mcp26ZoIEq-0
 
 
+           https://www.figma.com/file/kAGvtUf4yUWWi6nmGP1RRu/G7-C23-GITSHOES?type=design&node-id=0-1&mode=design&t=W7RgH5ePVcxt4IOY-0
 -PÁGINAS INSPIRADORAS
          https://grimoldi.com/
          https://opensports.com/
