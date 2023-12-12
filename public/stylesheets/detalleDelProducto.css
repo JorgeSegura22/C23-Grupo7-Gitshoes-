@@ -1,0 +1,149 @@
+
+.body_detalleDelProducto{
+    display: flex;
+    background-color: #FAF9F3;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.carousel_detalle_del_producto{
+    width: 80%;
+    margin: auto;
+}
+.seleccion_talle_color_detail{
+    width: 90%;
+    margin:auto;
+    font-weight: bold;
+}
+.titulo_precio_color{
+    margin-top: 4%
+
+}
+
+.marca_producto{
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+.modelo_precio{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo_talles{
+    font-weight: bold; 
+    margin-top: 4%
+}
+
+.talles_disponibles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4%
+    
+}
+.talles_disponibles div{
+    width: 30%;
+    margin: 1.5%;
+    background-color: rgb(192, 191, 191);
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.boton_comprar button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(77, 77, 77);
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0px;
+    transition: background-color 1s;
+}
+.boton_comprar:hover button{
+    background-color: rgb(255, 115, 0);
+}
+.boton_comprar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.boton_comprar a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.descripcion_producto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.descripcion_producto h3{
+    font-weight: bold;
+}
+
+.cantidad_producto{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.input_contador{
+    width: 30px;
+}
+.accesos_relacionados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.accesos_relacionados h3{
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 767px){
+    .imagen_producto_detalle{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+
+    .body_detalleDelProducto{
+        flex-direction: row;
+    }
+    .carousel_detalle_del_producto{
+        display: none;
+    }
+
+    .imagen_producto_detalle{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen_producto_detalle img{
+        width: 55%;
+        margin: 10px;
+    }
+    .seleccion_talle_color_detail{
+        width: 40%;
+    }
+}
+
+@media (min-width:0) and (max-width:1023px) { 
+    .accesos_relacionados{
+        display: none;
+    }
+}
+
+
+
+
+

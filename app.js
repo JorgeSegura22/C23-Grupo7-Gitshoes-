@@ -1,39 +1,48 @@
-const express = require("express");
-const app = express();
-const port = 3030;
-const path = require("path");
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-app.use(express.static("public"))
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var registerRouter = require('./routes/register');
+const loginRouter = require("./routes/login");
+const detalleDelProductoRouter=require("./routes/detalleDelProducto");
+const carritoRouter=require("./routes/carrito")
 
-app.get("/header",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/header.html"))
-})
+var app = express();
 
-app.get("/footer",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/footer.html"))
-})
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/home.html"))
-})
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/register",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/register.html"))
-})
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use("/register", registerRouter);
+app.use("/login",loginRouter);
+app.use("/detalle",detalleDelProductoRouter)
+app.use("/carrito",carritoRouter)
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 
-app.get("/login",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/login.html"))
-})
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-app.get("/detalleDelProducto",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/detalleDelProducto.html"))
-})
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
 
-app.get("/cart",(req,res)=>{
-    res.sendFile(path.join(__dirname+"/views/cart.html"))
-})
-
-app.listen(port, () => {
-    console.log(`Servidor arrancado en http://localhost:${port}/`);
-  });
-
+module.exports = app;
