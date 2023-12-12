@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detalleDelProducto</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/img/icom/favicon-16x16.png"/>
+    <script src="https://kit.fontawesome.com/5db5054929.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <article class="icom-hamburguesa">
+            <i class="fa-solid fa-bars"></i>
+        </article>
+            <img src="/images/logo-gitshoes0.jpg" alt="logo">
+        
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="" class="trancision-nav-header">HOMBRE</a></li>
+                    <li><a href="" class="trancision-nav-header">MUJER</a></li>
+                    <li><a href="" class="trancision-nav-header">NIÑOS</a></li>
+                    <li><a href="" class="trancision-nav-header">ACCESORIOS</a></li>
+                    <li><a href="" class="marca-menu">MARCA</a></li>
+                </ul>
+            </nav>
+        
+        <section class="Icom-header">
+            <a href="" class="trasición-icono"><i class="fa-solid fa-magnifying-glass" class="trancision-nav-header"></i>   </a>
+          <a href="" class="trasición-icono"><i class="fa-solid fa-user"></i></a>
+            <a href="" class="trasición-icono"> <i class="fa-solid fa-cart-shopping"></i></a>
+            
+        </section>
+          <div class="envio-gratis-bar">
+                ¡Envío gratis a partir de $50,000!
+            </div>
+    </header>
+    <hr class="linea-negra">
+<h2>Formulario de Carga de Producto</h2>
+
+<form class="form-carga" action="/cargar-producto" method="post" enctype="multipart/form-data">
+    
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" name="categoria" required>
+
+    <label for="imagen">Imagen del Producto:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+    
+
+    <button type="submit">Cargar Producto</button>
+</form>
+<footer>
+    <p id="footer1">Información General</p>
+        <section id="footer2">
+            <nav>
+                <ul>
+                    <li>FORMAS DE PAGO</li>
+                    <li>ENVÍOS Y CAMBIOS</li>
+                    <li>GUÍA DE COMPRAS</li>
+                    <li>LOCALES</li>
+                    <li>RR.HH</li>
+                </ul>
+            </nav>
+        </section>
+        <section id="footer3">
+            <nav>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Clientes</li>
+                    <li>E-Store</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.form-carga{
+display:flex;
+flex-direction: column;
+align-items: center;
+border:2px solid grey;
+padding: 20px;
+
+}
+
+.form-carga input{
+width: 50%;
+}
+
+.form-carga textarea{
+    width: 50%;
+}
+
+.form-carga button{
+    background-color: orange;
+    color:white;
+    margin-top: 10px;
+    
+}

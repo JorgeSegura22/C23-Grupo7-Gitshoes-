@@ -1,0 +1,18 @@
+.tabla{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    gap: 4px;
+    
+}
+.id{
+    border: 2px solid grey;
+    margin-right: 5px;
+}
+thead tr th{
+    word-spacing: 5px;
+}
+
+
