@@ -1,18 +1,36 @@
-.tabla{
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    gap: 4px;
-    
+.main_dashboard{
+    background-color: #fbf9f2 ;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.id{
-    border: 2px solid grey;
-    margin-right: 5px;
+.tabla_dashboard{
+    background-color: white;
+    width: 90%;
+    margin: auto;
 }
+
 thead tr th{
     word-spacing: 5px;
+}
+
+th, td {
+    padding:20px ;
+}
+
+.thead{
+    background-color: orange;
+}
+
+#acciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.acceso_carga{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
 }
 
 
