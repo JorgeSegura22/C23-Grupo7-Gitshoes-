@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main class="main_carrito">
+        <section class="seccion_1_carrito">
+            <div>
+                <img src="/img/detalleDelProducto/8175143.jpg" alt="imagen dde zapatillas" class="imagen_carrito">
+            </div>
+            <div class="carrito_datos">
+                <p>Producto:</p>
+                <img src="/images/detalleDelProducto/8175138.jpg" alt="imagen de zapatilla" class="imagen_color">
+            </div>
+            <div class="carrito_datos">
+                <p>Detalle:</p>
+                <p>Vans - W ward</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Talle:</p>
+                <p>39</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Color:</p>
+                <img src="/images/detalleDelProducto/8175143.jpg" alt="imagen de zapatilla" class="imagen_color">
+            </div>
+            <div class="carrito_datos">
+                <p>Precio:</p>
+                <p>45000</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Cantidad:</p>
+                <p>1</p>
+            </div>
+            <div class="carrito_datos">
+                <p>Precio subtotal:</p>
+                <p>45000</p>
+            </div>
+        </section>
+        <section class="seccion_2_carrito">
+            <div class="seccion_cupon">
+                <p class="cupon_consulta">¿Tenés un cupón de descuento?</p>
+                <div class="input_cupon_boton">
+                    <input type="text" name="cupon" id="cupon">
+                    <button type="submit" value="enviar datos" class="aplicar_descuento">Aplicar descuento</button>
+                </div>
+            </div>
+            <div class="resumen_carrito">
+                <div class="total_articulos">
+                    <p>Total de artículos:</p>
+                    <p>1</p>
+                </div>
+                <div class="total_precio">
+                    <p>Total:</p>
+                    <p>45000</p>
+                </div>
+                    
+            </div>
+            <div class="envios_cart">
+                <p>Costo de envio:</p>
+                <input type="text" name="envio" id="envio" placeholder="Indique su código postal">
+                <button type="submit" value="enviar datos" class="boton_buscar_envio">Buscar</button>
+            </div>
+            <button type="submit" value="enviar datos" class="finalizar_compra">Finalizar Compra</button>
+
+            <button type="submit" value="enviar datos"  class="continuar_comprando">Continuar comprando</button>
+
+            <button type="submit" value="enviar datos" class="vaciar_carrito">Vaciar carrito </button>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

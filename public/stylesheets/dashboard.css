@@ -1,0 +1,36 @@
+.main_dashboard{
+    background-color: #fbf9f2 ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.tabla_dashboard{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+}
+
+thead tr th{
+    word-spacing: 5px;
+}
+
+th, td {
+    padding:20px ;
+}
+
+.thead{
+    background-color: orange;
+}
+
+#acciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.acceso_carga{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+

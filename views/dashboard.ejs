@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main class="main_dashboard">
+<h2>Dashboard de Productos</h2>
+
+<div class="acceso_carga">
+    <p>Si desea crear un nuevo articulo ingrese aquí</p>
+    <a href="/carga"><button >Crear Producto</button></a>
+</div>
+
+<table class="tabla_dashboard" border="1">
+    <thead class="thead">
+        <tr>
+            
+            <th >ID</th>
+            <th >Nombre</th>
+            <th >Descripción</th>
+            <th >Precio</th>
+            <th >Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="tabla"> 
+        
+        <tr>
+            <td class="id">1</td>
+            <td class="id">Zapatillas Vans</td>
+            <td class="id">Las nuevas Vans Ward combinan el estilo de la clásica zapatilla de skate con las rayas laterales,
+                con una puntera reforzada y materiales resistentes. Diseñados para tus paseos por la ciudad.</td>
+            <td class="id">$19.99</td>
+            <td class="id" id="acciones">
+                <a href="/detalle"><button >Ver</button></a>
+                <a href="/edicion"><button >Editar</button></a>
+                <button onclick="borrarProducto(1)">Borrar</button>
+            </td>
+        </tr>
+        
+</table>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

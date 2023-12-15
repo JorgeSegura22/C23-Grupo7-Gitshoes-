@@ -1,0 +1,45 @@
+.main-login{
+    background-color: #fbf9f2;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#username_login{
+    margin: 10px
+}
+#password_login{
+    margin: 10px;
+}
+
+.boton_inicar_sesion_login{
+    width: 60%;
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.recuperar_contraseña{
+    margin: 10px;
+}
+.registarse_login{
+    margin: 10px;
+}
+
+
+
+@media (max-width: 767px){
+    .username_login{
+        display: none;
+    }
+    .password_login{
+        display: none;
+    }
+}
+

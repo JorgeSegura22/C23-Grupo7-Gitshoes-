@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <%- include('partials/head') %>
+<body class="body_register">
+    <%- include('partials/header') %>
+<main class="main_register" >
+<div class="container_registro">
+    <h2 class="registro">Registro</h2>
+    <form class="form_register">
+        <div class="input-group">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+        </div>
+        <div class="input-group">
+            <label for="apellido">Ingrese su apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+        </div>
+        <div class="input-group">
+            <label for="email">Ingrese su correo:</label>
+            <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+        </div>
+        <div class="input-group">
+            <label for="password">Ingrese su contraseña:</label>
+            <input type="password" id="password" name="password" required placeholder="Contraseña">
+        </div>
+        <div class="input-group" class="terminos_check">
+            <label for="terminos">Estoy de acuerdo con los términos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" required>
+        </div>
+        <button class="boton_registro"  type="submit" class="input-group">REGISTRAR</button>
+        <p id="tengo" >¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+    </form>
+</div>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>

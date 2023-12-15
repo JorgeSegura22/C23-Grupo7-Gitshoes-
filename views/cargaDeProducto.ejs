@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+<h2>Formulario de Carga de Producto</h2>
+
+<form class="form-carga" action="/cargar-producto" method="post" enctype="multipart/form-data">
+    
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" name="categoria" required>
+
+    <label for="imagen">Imagen del Producto:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+    
+
+    <button type="submit">Cargar Producto</button>
+</form>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>
