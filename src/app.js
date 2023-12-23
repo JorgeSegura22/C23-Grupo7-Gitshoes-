@@ -5,14 +5,17 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var productsRouter = require('./routes/products');
 var usersRouter = require('./routes/users');
-var registerRouter = require('./routes/register');
-const loginRouter = require("./routes/login");
-const detalleDelProductoRouter=require("./routes/detalleDelProducto");
-const carritoRouter=require("./routes/carrito");
-const cargaRouter=require("./routes/carga");
-const edicionRouter=require("./routes/edicion");
-const dashboardRouter=require("./routes/dashboard")
+
+// var usersRouter = require('./routes/users');
+// var registerRouter = require('./routes/register');
+// const loginRouter = require("./routes/login");
+// const detalleDelProductoRouter=require("./routes/detalleDelProducto");
+// const carritoRouter=require("./routes/carrito");
+// const cargaRouter=require("./routes/carga");
+// const edicionRouter=require("./routes/edicion");
+// const dashboardRouter=require("./routes/dashboard")
 
 var app = express();
 
@@ -24,17 +27,22 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
+
 
 app.use('/', indexRouter);
+app.use('/products', productsRouter);
 app.use('/users', usersRouter);
-app.use("/register", registerRouter);
-app.use("/login",loginRouter);
-app.use("/detalle",detalleDelProductoRouter);
-app.use("/carrito",carritoRouter);
-app.use("/carga",cargaRouter);
-app.use("/edicion",edicionRouter);
-app.use("/dashboard",dashboardRouter)
+
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+// app.use("/register", registerRouter);
+// app.use("/login",loginRouter);
+// app.use("/detalle",detalleDelProductoRouter);
+// app.use("/carrito",carritoRouter);
+// app.use("/carga",cargaRouter);
+// app.use("/edicion",edicionRouter);
+// app.use("/dashboard",dashboardRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
