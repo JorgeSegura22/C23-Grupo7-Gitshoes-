@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "marca": "vans",
+        "modelo": "Vans W Ward",
+        "precio": 53900,
+        "decuento": 10,
+        "color": "negro",
+        "talle": 40,
+        "descripcion": "Las nuevas Vans Ward combinan el estilo de la clásica zapatilla de skate con las rayas laterales, con una puntera reforzada y materiales resistentes. Diseñados para tus paseos por la ciudad.",
+        "categoria": "calzado",
+        "genero": "unisex",
+        "imagen": "default"
+    }
+]

@@ -1,6 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 
+const { v4: uuidv4 } = require('uuid');
+
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+
+const getJson = () => {
+	const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+	return products;
+}
+
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 const controller= {
 
 carga: (req, res) => {
@@ -16,7 +29,12 @@ dashboard: (req, res) => {
 },
 
 detalle: (req, res) => {
-    res.render("detalleDelProducto",{title:"Detalle"});
+        const {id} = req.params;
+		const products = getJson();
+		const product = products.find(product => product.id == id)
+		res.render("detalleDelProducto",{title:"Detalle", product, toThousand});
+    
+
 },
 
 edicion: (req, res) => {

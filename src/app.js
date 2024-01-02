@@ -8,15 +8,6 @@ var indexRouter = require('./routes/index');
 var productsRouter = require('./routes/products');
 var usersRouter = require('./routes/users');
 
-// var usersRouter = require('./routes/users');
-// var registerRouter = require('./routes/register');
-// const loginRouter = require("./routes/login");
-// const detalleDelProductoRouter=require("./routes/detalleDelProducto");
-// const carritoRouter=require("./routes/carrito");
-// const cargaRouter=require("./routes/carga");
-// const edicionRouter=require("./routes/edicion");
-// const dashboardRouter=require("./routes/dashboard")
-
 var app = express();
 
 // view engine setup
@@ -34,15 +25,7 @@ app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/users', usersRouter);
 
-// app.use('/', indexRouter);
-// app.use('/users', usersRouter);
-// app.use("/register", registerRouter);
-// app.use("/login",loginRouter);
-// app.use("/detalle",detalleDelProductoRouter);
-// app.use("/carrito",carritoRouter);
-// app.use("/carga",cargaRouter);
-// app.use("/edicion",edicionRouter);
-// app.use("/dashboard",dashboardRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
