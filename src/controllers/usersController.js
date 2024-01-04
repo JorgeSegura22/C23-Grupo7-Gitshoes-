@@ -4,11 +4,11 @@ const path = require('path');
 const controller = {
 
 registro: (req, res) => {
-    res.render("register",{title:"Registro"});
+    res.render("usuario/register",{title:"Registro"});
     },
 
 login:(req,res)=>{
-    res.render("login")
+    res.render("usuario/login")
 }
 }
 module.exports = controller;
