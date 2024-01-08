@@ -11,5 +11,21 @@
         "categoria": "calzado",
         "genero": "unisex",
         "imagen": "default"
+    },
+    {
+        "id": "5093c5bc-5aba-451f-b85f-379b410c1404",
+        "marca": "vans",
+        "modelo": "m filmore hi",
+        "color": "celeste",
+        "talle": "10",
+        "descripcion": "Consigue tu nuevo look diario con las zapatillas Vans W Filmore High. • De caña alta, lona en un estilo deportivo con puntera redonda • Cierre con cordones para un ajuste seguro • Clásico logo vans en el lateral • Forro suave con una plantilla cómoda para todo el día. • Entresuela de plataforma de espuma EVA para mayor soporte • Suela exterior de goma duradera con agarre tipo waffle característica de la marca.",
+        "genero": "unisex",
+        "precio": 90000,
+        "descuento": 10,
+        "images": [
+            "1704680610206_img_.jpg",
+            "1704680610210_img_.jpg",
+            "1704680610211_img_.jpg"
+        ]
     }
 ]
