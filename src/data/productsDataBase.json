@@ -13,19 +13,51 @@
         "imagen": "default"
     },
     {
-        "id": "5093c5bc-5aba-451f-b85f-379b410c1404",
+        "id": "75ea5357-f376-4fbc-9522-90aff43b4694",
+        "marca": "vans",
+        "modelo": "M WARD",
+        "color": "blanco",
+        "talle": "40",
+        "descripcion": "El Vans Ward, un modelo bajo de estilo skater, confeccionada con canvas resistente y presenta la icónica banda de cuero lateral en los laterales, suela de goma Waffle original de la marca.",
+        "genero": "unisex",
+        "precio": 92000,
+        "descuento": 20,
+        "images": [
+            "1704681192445_img_.jpg",
+            "1704681192446_img_.jpg",
+            "1704681192448_img_.jpg"
+        ]
+    },
+    {
+        "id": "59cd08c0-aabd-4574-870d-08b3ec35da46",
+        "marca": "vans",
+        "modelo": "M WARD",
+        "color": "celeste",
+        "talle": "39",
+        "descripcion": "El Vans Ward, un modelo bajo de estilo skater, confeccionada con canvas resistente y presenta la icónica banda de cuero lateral en los laterales, suela de goma Waffle original de la marca.",
+        "genero": "unisex",
+        "precio": 95000,
+        "descuento": 10,
+        "images": [
+            "1704681276541_img_.jpg",
+            "1704681276544_img_.jpg",
+            "1704681276552_img_.jpg"
+        ]
+    },
+    {
+        "id": "4939c6b7-88e4-4fae-a45f-019f5a8bcca6",
         "marca": "vans",
         "modelo": "m filmore hi",
         "color": "celeste",
-        "talle": "10",
+        "talle": "40",
         "descripcion": "Consigue tu nuevo look diario con las zapatillas Vans W Filmore High. • De caña alta, lona en un estilo deportivo con puntera redonda • Cierre con cordones para un ajuste seguro • Clásico logo vans en el lateral • Forro suave con una plantilla cómoda para todo el día. • Entresuela de plataforma de espuma EVA para mayor soporte • Suela exterior de goma duradera con agarre tipo waffle característica de la marca.",
         "genero": "unisex",
-        "precio": 90000,
+        "precio": 100000,
         "descuento": 10,
         "images": [
-            "1704680610206_img_.jpg",
-            "1704680610210_img_.jpg",
-            "1704680610211_img_.jpg"
+            "1704681343925_img_.jpg",
+            "1704681343927_img_.jpg",
+            "1704681343934_img_.jpg"
         ]
     }
 ]
