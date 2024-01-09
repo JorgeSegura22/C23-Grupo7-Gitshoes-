@@ -31,6 +31,6 @@ router.get('/edicionDeProducto/:id', productsController.edicion);
 router.put('/edicionDeProducto/:id', productsController.editar);
 
 
-router.get('/dashboard', productsController.dashboard);
+router.get('/dashboard', productsController.listarProductos);
 
 module.exports = router;

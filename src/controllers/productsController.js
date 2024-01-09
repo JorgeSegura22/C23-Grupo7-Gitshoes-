@@ -54,8 +54,9 @@ carrito: (req, res) => {
     res.render("producto/cart",{title:"Carrito"});
 },
 
-dashboard: (req, res) => {
-    res.render("producto/dashboard",{title:"dashboard"});
+listarProductos: (req, res) => {
+		const product = getJson();
+		res.render("producto/dashboard",{title:"dashboard", product});
 },
 
 detalle: (req, res) => {
