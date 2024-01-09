@@ -27,7 +27,8 @@ router.get('/cart',productsController.carrito);
 router.get('/detalleDelProducto/:id', productsController.detalle);
 
 
-router.get('/edicionDeProducto', productsController.edicion);
+router.get('/edicionDeProducto/:id', productsController.edicion);
+router.put('/edicionDeProducto/:id', productsController.editar);
 
 
 router.get('/dashboard', productsController.dashboard);

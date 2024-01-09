@@ -16,8 +16,6 @@ const getJson = () => {
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller= {
-
-
 // formulario de carga de productos
 carga: (req, res) => {
     res.render("producto/cargaDeProducto",{title:"carga"});
@@ -69,9 +67,46 @@ detalle: (req, res) => {
 
 },
 
+// vista para edición
 edicion: (req, res) => {
-    res.render("producto/edicionDeProducto",{title:"Edición"});
+	const {id} = req.params;
+		const products = getJson();
+		const product = products.find(product => product.id == id);
+    res.render("producto/edicionDeProducto",{title:"Edición",toThousand, product});
 },
+
+// formulario para editar el producto
+editar: (req, res) => {
+	const images = [];
+		if (req.files){
+		files.forEach(element => {
+		images.push(element.filename);
+		});
+		}
+		const {id} = req.params;
+		console.log(id)
+		const {marca, modelo, color, talle, descripcion, genero, precio, descuento} = req.body;
+		const nuevoArray = products.map(product => {
+			if (product.id == id){
+				return{
+					id,
+					marca: marca.trim(),
+					modelo: modelo.trim(),
+					color: color.trim(),
+					talle,
+					descripcion: descripcion.trim(),
+					genero: genero,
+					precio: +precio,
+					descuento: +descuento,
+					images: images.length > 0 ? images : product.image,
+				}
+			}
+			return product;
+		})
+		const json = JSON.stringify(nuevoArray);
+		fs.writeFileSync(productsFilePath, json, "utf-8");
+		// res.redirect(`/products/detail/${id}`)  quitar  cuando este lista la vista
+}
 
 }
 
