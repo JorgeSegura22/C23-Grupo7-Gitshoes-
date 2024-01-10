@@ -8,7 +8,7 @@
 
 <div class="acceso_carga">
     <p>Si desea crear un nuevo articulo ingrese aquí</p>
-    <a href="/carga"><button >Crear Producto</button></a>
+    <a href="cargaDeProducto"><button >Crear Producto</button></a>
 </div>
 <% product.forEach(product => {%>
 <table class="tabla_dashboard" border="1">
@@ -31,7 +31,7 @@
             <td class="id"><%= product.precio %></td>
             <td class="id" id="acciones">
                 <a href="/detalle"><button >Ver</button></a>
-                <a href="/edicion"><button >Editar</button></a>
+                <a href="/products/edicionDeProducto/<%= product.id %>"><button >Editar</button></a>
                 <button onclick="borrarProducto(1)">Borrar</button>
             </td>
         </tr>

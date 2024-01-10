@@ -107,7 +107,8 @@ editar: (req, res) => {
 		const json = JSON.stringify(nuevoArray);
 		fs.writeFileSync(productsFilePath, json, "utf-8");
 		// res.redirect(`/products/detail/${id}`)  quitar  cuando este lista la vista
-}
+},
+
 
 }
 
