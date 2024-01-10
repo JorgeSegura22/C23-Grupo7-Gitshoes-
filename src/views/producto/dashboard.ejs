@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <main class="main_dashboard">
+<h2>Dashboard de Productos</h2>
+
+<div class="acceso_carga">
+    <p>Si desea crear un nuevo articulo ingrese aquí</p>
+    <a href="/carga"><button >Crear Producto</button></a>
+</div>
+<% product.forEach(product => {%>
+<table class="tabla_dashboard" border="1">
+    <thead class="thead">
+        <tr>
+            
+            <th >ID</th>
+            <th >Marca</th>
+            <th >Modelo</th>
+            <th >Precio</th>
+            <th >Acciones</th>
+        </tr>
+    </thead>
+    <tbody class="tabla"> 
+        
+        <tr>
+            <td class="id"><%= product.id %></td>
+            <td class="id"><%= product.marca %></td>
+            <td class="id"><%= product.modelo %></td>
+            <td class="id"><%= product.precio %></td>
+            <td class="id" id="acciones">
+                <a href="/detalle"><button >Ver</button></a>
+                <a href="/edicion"><button >Editar</button></a>
+                <button onclick="borrarProducto(1)">Borrar</button>
+            </td>
+        </tr>
+        
+</table>
+<% }) %>
+</main>
+<%- include('../partials/footer') %>
+</body>
+</html>

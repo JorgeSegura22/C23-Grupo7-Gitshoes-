@@ -13,3 +13,6 @@ Sprint 1
   Si bien logramos finalizarlo, creemos que se puede mejorar el tema de los plazos de subida de los archivos
   para dejar los ultimos días para realizar pequeñas correciones.
   Este seria el objetivo a cumplir.
+
+  En el siguiente link se puede acceder a una imagen que muestra la retro del sprint 2
+  https://drive.google.com/file/d/1RWZgrGlfKDz-XiPOqgOFnm1DyX2AYazZ/view?usp=drive_link
