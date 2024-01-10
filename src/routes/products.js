@@ -27,8 +27,8 @@ router.get('/cart',productsController.carrito);
 router.get('/detalleDelProducto/:id', productsController.detalle);
 
 
-router.get('/edicionDeProducto/:id', productsController.edicion);
-router.put('/edicionDeProducto/:id', productsController.editar);
+router.get('/edicionDeProducto/:id',upload.array("imagenes"), productsController.edicion);
+router.put('/edicionDeProducto/:id',upload.array("imagenes"), productsController.editar);
 
 
 router.get('/dashboard', productsController.listarProductos);

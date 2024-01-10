@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+
+
+
 const { v4: uuidv4 } = require('uuid');
 uuidv4();
 
@@ -24,6 +27,7 @@ carga: (req, res) => {
 //modulo para procesar los datos del formulario y almacenarlos
 almacenar: (req, res) => {
 	const files = req.files
+	console.log(files )
 	const images = [];
 	files.forEach(element => {
 		images.push(element.filename);
@@ -71,22 +75,28 @@ detalle: (req, res) => {
 // vista para edición
 edicion: (req, res) => {
 	const {id} = req.params;
-		const products = getJson();
+	const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		const product = products.find(product => product.id == id);
-    res.render("producto/edicionDeProducto",{title:"Edición",toThousand, product});
+		console.log(product)
+		console.log(id)
+    res.render("producto/edicionDeProducto",{ product});
 },
 
 // formulario para editar el producto
 editar: (req, res) => {
+	const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 	const images = [];
 		if (req.files){
-		files.forEach(element => {
+		req.files.forEach(element => {
 		images.push(element.filename);
 		});
 		}
 		const {id} = req.params;
 		console.log(id)
 		const {marca, modelo, color, talle, descripcion, genero, precio, descuento} = req.body;
+		console.log(marca)
 		const nuevoArray = products.map(product => {
 			if (product.id == id){
 				return{
@@ -96,7 +106,7 @@ editar: (req, res) => {
 					color: color.trim(),
 					talle,
 					descripcion: descripcion.trim(),
-					genero: genero,
+					genero: genero.trim(),
 					precio: +precio,
 					descuento: +descuento,
 					images: images.length > 0 ? images : product.image,
@@ -106,9 +116,8 @@ editar: (req, res) => {
 		})
 		const json = JSON.stringify(nuevoArray);
 		fs.writeFileSync(productsFilePath, json, "utf-8");
-		// res.redirect(`/products/detail/${id}`)  quitar  cuando este lista la vista
-},
-
+		res.redirect(`/products/detail/${id}`)  
+}
 
 }
 
