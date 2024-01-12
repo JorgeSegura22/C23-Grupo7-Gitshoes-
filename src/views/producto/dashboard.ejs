@@ -10,6 +10,18 @@
     <p>Si desea crear un nuevo articulo ingrese aquí</p>
     <a href="cargaDeProducto"><button >Crear Producto</button></a>
 </div>
+<script type="text/javascript">
+    function confirmacion(){
+        let respuesta = confirm("¿Estas seguro que deseas eliminar este producto?");
+
+        if (respuesta == true){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+</script>
 <% product.forEach(product => {%>
 <table class="tabla_dashboard" border="1">
     <thead class="thead">
@@ -32,7 +44,9 @@
             <td class="id" id="acciones">
                 <a href="/detalle"><button >Ver</button></a>
                 <a href="/products/edicionDeProducto/<%= product.id %>"><button >Editar</button></a>
-                <button onclick="borrarProducto(1)">Borrar</button>
+                <form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" >
+                    <button type="submit"  onclick="return confirmacion()">Eliminar</button>
+                </form>
             </td>
         </tr>
         

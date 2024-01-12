@@ -78,9 +78,7 @@ edicion: (req, res) => {
 	const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 	const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		const product = products.find(product => product.id == id);
-		console.log(product)
-		console.log(id)
-    res.render("producto/edicionDeProducto",{ product});
+    res.render("producto/edicionDeProducto",{product});
 },
 
 // formulario para editar el producto
@@ -93,10 +91,8 @@ editar: (req, res) => {
 		images.push(element.filename);
 		});
 		}
-		const {id} = req.params;
-		console.log(id)
+		const {id} = req.params
 		const {marca, modelo, color, talle, descripcion, genero, precio, descuento} = req.body;
-		console.log(marca)
 		const nuevoArray = products.map(product => {
 			if (product.id == id){
 				return{
@@ -117,6 +113,28 @@ editar: (req, res) => {
 		const json = JSON.stringify(nuevoArray);
 		fs.writeFileSync(productsFilePath, json, "utf-8");
 		res.redirect(`/products/detail/${id}`)  
+},
+eliminar: (req, res) => {
+	const {id} = req.params;
+	const productos = getJson();
+	const product = productos.find(product => product.id == id);
+	const listaNueva = productos.filter(elemento => elemento.id != id);
+	const json = JSON.stringify(listaNueva);
+	let imagenes = product.images;
+
+	// fs.unlink(`./public/images/products/${product.images}`,(err)=>{
+	// 	if(err) throw err;
+	// 	console.log("imagen eliminada")
+	// 	});
+	
+	imagenes.forEach(imagen =>{
+	fs.unlink(`./public/images/products/${imagen}`, (err)=>{
+		if(err) throw err;
+		}); 
+	})
+
+	fs.writeFileSync(productsFilePath, json, "utf-8");
+	res.redirect("/products/dashboard")
 }
 
 }
